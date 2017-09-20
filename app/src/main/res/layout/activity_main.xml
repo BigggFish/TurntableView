@@ -8,6 +8,17 @@
     android:layout_gravity="center"
     tools:context="com.bigggfish.turntableview.MainActivity">
 
+    <Switch
+        android:id="@+id/switch_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="按钮转"
+        android:textOff="转盘转"
+        android:padding="16dp"
+        android:text="转动模式"
+        android:textColor="@color/colorAccent"
+        />
+
 
     <com.bigggfish.turntableview.LuckyPlateView
         android:id="@+id/luck_plate_view"
@@ -19,5 +30,17 @@
         >
 
     </com.bigggfish.turntableview.LuckyPlateView>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        style="@style/Base.Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        android:max="10"
+        android:progress="6"
+        android:thumb="@mipmap/ic_launcher_round"
+        />
 
 </FrameLayout>

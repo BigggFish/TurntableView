@@ -123,6 +123,7 @@ public class LuckyPlateView extends FrameLayout {
 
     public void startRotating(int stopPosition) {
         setStopPosition(stopPosition);
+        btnSignIn.setRotation(0);
         if (rotatingMode == MODE_PLATE_ROTATING) {//转盘转模式
             turntableView.startRotation();
         } else if (rotatingMode == MODE_INDICATOR_ROTATING) {//指针转模式
